@@ -1,7 +1,13 @@
 import Book from "./Book.js";
 
 //Book param order: title, fName, lName, pages, coverType
-const sciFiBook = new Book("Ahsoka", "E. K.", "Johnson", 356, "hard");
+const sciFiBook = new Book(
+  "Ahsoka", 
+  "E. K.", 
+  "Johnson", 
+  356, 
+  "hard"
+);
 
 const motivationalBook = new Book(
   "Start with Why",
@@ -11,7 +17,13 @@ const motivationalBook = new Book(
   "soft"
 );
 
-const processBook = new Book("The Phoenix Project", "Gene", "Kim", 346, "soft");
+const processBook = new Book(
+  "The Phoenix Project", 
+  "Gene", 
+  "Kim", 
+  346, 
+  "soft"
+);
 
 const leadershipBook = new Book(
   "Learning to Lead",
