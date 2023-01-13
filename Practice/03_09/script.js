@@ -9,7 +9,13 @@
 
 const backpack = {
   name: "Everyday Backpack",
+  changeName: function (newName) {
+    this.name = newName;
+  },
   volume: 30,
+  updateVolume: function (newVolume) {
+    this.volume = newVolume;
+  },
   color: "grey",
   pocketNum: 15,
   strapLength: {
