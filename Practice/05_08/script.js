@@ -25,7 +25,7 @@ document.querySelector("img").setAttribute("loading", "eager");
 // add inline CSS to element
 const backpackTitle = document.querySelector(".backpack__name");
 backpackTitle.style.color = "red";
-backpackTitle.style.textDecoration = "underline";
+backpackTitle.style.textDecoration = "underline dotted";
 
 //query style property of element to get list of all style properties available
 console.log(backpackTitle.style);
