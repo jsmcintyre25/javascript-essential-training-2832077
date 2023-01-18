@@ -1,10 +1,10 @@
 /**
  * Challenge: Add a new element
  * - In JavaScript, create a new element to hold a navigation menu
- * - Add an unordered list and a series of no less than five links to the list 
+ * - Add an unordered list and a series of no less than five links to the list
  * - Use single words like “home”, “about”, etc for the list items and set the src attribute to # for simplicity
  * - Add the new navigation element to the DOM directly after the header
- * - Write basic CSS and add classes as necessary to create a horizontal layout for the menu. 
+ * - Write basic CSS and add classes as necessary to create a horizontal layout for the menu.
  * - A tip: Use either display flex or display grid to create the horizontal menu.
  */
 
@@ -21,6 +21,16 @@ const everydayPack = new Backpack(
   "December 5, 2018 15:00:00 PST",
   "../assets/images/everyday.svg"
 );
+
+const navList = `
+    <ul class="navlist">
+      <li class="navlist-item"><a href="#">Home</a></li>
+      <li class="navlist-item"><a href="#">About</a></li>
+      <li class="navlist-item"><a href="#">School<a></li>
+      <li class="navlist-item"><a href="#">Travel</a></li>
+      <li class="navlist-item"><a href="#">Industrial</a></li>
+    </ul>
+`;
 
 const content = `
   
@@ -51,6 +61,14 @@ const content = `
     </ul>
   
 `;
+
+const header = document.querySelector(".siteheader");
+
+const navBar = document.createElement("nav");
+navBar.classList.add("navbar");
+navBar.innerHTML = navList;
+
+header.append(navBar);
 
 const main = document.querySelector(".maincontent");
 

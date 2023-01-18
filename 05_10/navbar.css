@@ -1,0 +1,18 @@
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navlist-item {
+  margin-right: 2rem;
+}
+
+.navlist-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.navlist-item a:hover {
+  color: blue;
+}
