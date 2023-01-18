@@ -32,5 +32,9 @@ let shortItem = shelf.find(function (item) {
 });
 console.log(`An element w/less than three charaters: ${shortItem}.`);
 
+let remove = "soldier";
+shelf.splice(shelf.indexOf(remove), 1);
+console.log(`Array with "${remove}" removed:`, shelf);
+
 shelf.sort();
 console.log("Sort alphabetically:", shelf);
