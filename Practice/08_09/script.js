@@ -57,3 +57,26 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+// Creates figure w/image and markup
+const imageHTML = (type) => {
+  let newFigure = document.createElement("figure");
+  let newImg = document.createElement("img");
+  newImg.setAttribute("src", type.image);
+  newImg.setAttribute("alt", `picture of ${type.name}`);
+  let newCaption = document.createElement("figcaption");
+  newCaption.innerHTML = type.name;
+  newFigure.append(newImg, newCaption);
+  return newFigure;
+};
+console.log(imageHTML(frogpack));
+
+const backpackHTML = (backpack) => {
+  let newArticle = document.createElement("article");
+  newArticle.innerHTML = content;
+  newArticle.prepend(imageHTML(backpack));
+  return newArticle;
+};
+console.log(backpackHTML(frogpack));
+
+document.querySelector("main").append(backpackHTML(frogpack));
